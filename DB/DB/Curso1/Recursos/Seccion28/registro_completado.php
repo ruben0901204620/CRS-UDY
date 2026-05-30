@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro_completado.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>El registro de empleados a sido satisfactorio</h2>
+    <a href="nuevo_usuario.php">Ingresa otro usuario</a>
+    <a href="index.php">Regresa al inicio</a>
+
+    
+</body>
+</html>

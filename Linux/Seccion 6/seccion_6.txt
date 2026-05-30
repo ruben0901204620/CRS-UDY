@@ -1,0 +1,218 @@
+ 1  ls
+    2  nano fichero.txt
+    3  ls -la
+    4  cat fichero.txt 
+    5  info df 
+    6  df -i
+    7  ls -i fichero.txt 
+    8  stat fichero.txt 
+    9  sudo debugfs -R "stat <130704>" /dev/sda1
+   10  cat fichero.txt 
+   11  sudo debugfs -R "stat <130704>" /dev/sda1 
+   12  ls -la 
+   13  pwd
+   14  ls -lid /home/luchdev
+   15  stat /home/luchdev
+   16  ls -lia /home/luchdev
+   17  ls -lid /home
+   18  ls -lid /home/luchdev
+   19  ls -la /
+   20  ls -li
+   21  ls -li /
+   22  ls -lid /urs/bin
+   23  ls -lid /usr/bin
+   24  ls -lid /bin
+   25  sudo debugfs -R "stat <13>" /dev/sda1
+   26  type ln
+   27  ls
+   28  cd Escritorio/
+   29  nano ficheroDesk.txt
+   30  ls
+   31  cd ..
+   32  ln -s Escritorio/ficheroDesk.txt fich_simbolico
+   33  ls -la
+   34  cat fich_simbolico 
+   35  nano fich_simbolico 
+   36  cd Escritorio/
+   37  rm ficheroDesk.txt 
+   38  cd
+   39  ls -la
+   40  cat fich_simbolico 
+   41  rm fich_simbolico 
+   42  ls
+   43  nano Escritorio/fichero.txt
+   44  ln -s /home/luchdev/Escritorio/fichero.txt  enlace_simb
+   45  ls -la
+   46  cat enlace_simb 
+   47  ln -s /var/log acceso_logs
+   48  ls -la
+   49  cd acceso_logs/
+   50  ls
+   51  pwd
+   52  clear
+   53  cd
+   54  info ln
+   55  cd Escritorio/
+   56  nano fichero2.txt
+   57  cd
+   58  pwd
+   59  ln Escritorio/fichero2.txt  enlace_duro
+   60  ls -l
+   61  cat enlace_duro 
+   62  ls 
+   63  ls -l
+   64  ls -li
+   65  ls -li Escritorio/fichero2.txt 
+   66  cd Escritorio/
+   67  rm fichero2.txt 
+   68  cd
+   69  ls -l
+   70  cat enlace_duro 
+   71  ls -l
+   72  cd Escritorio/
+   73  nano fichero2.txt 
+   74  cd
+   75  ln Escritorio/fichero2.txt enlace_duro2
+   76  ls -l
+   77  cd Escritorio/
+   78  ls -l
+   79  cd
+   80  rm enlace_duro2 
+   81  cd Escritorio/
+   82  ls -l
+   83  cd
+   84  mkdir testdir
+   85  ls -l
+   86  cd testdir/
+   87  ls -la
+   88  ls -lai
+   89  mkdir subDirTest
+   90  cd
+   91  cd ..
+   92  ls -la
+   93  cd
+   94  ls -la
+   95  clear
+   96  nano fichero.txt 
+   97  nano fichero2.txt 
+   98  ls
+   99  cat fichero.txt  fichero2.txt 
+  100  cat fichero*
+  101  ls fichero*
+  102  ls D*
+  103  ls -d D*
+  104  cat fichero?.txt
+  105  ls
+  106  cat fichero[1234].txt
+  107  cat fichero[1234]
+  108  cat fichero[!1234].txt
+  109  cat fichero[[:digit:]].txt
+  110  cat fichero[[:alpha:]].txt
+  111  cat fichero[[:alnum:]].txt
+  112  ls -d [[:upper:]]*
+  113  ls -d [[:lower:]]*
+  114  cat fichero[![:digit:]].txt
+  115  nano ficheroC.txt
+  116  cat fichero[![:digit:]].txt
+  117  ls
+  118  rm *.txt
+  119  ls
+  120  cd Escritorio/
+  121  ls
+  122  rm *.txt
+  123  cd
+  124  ls
+  125  type echo
+  126  echo esto es un texto de prueba
+  127  nano fichero1.txt
+  128  cp fichero1.txt fichero2.txt 
+  129  cp fichero1.txt fichero3.txt 
+  130  nano fichero2.txt 
+  131  nano fichero3.txt 
+  132  echo fichero*
+  133  echo fichero1.txt fichero2.txt fichero3.txt 
+  134  echo ~
+  135  echo *
+  136  echo /*/log
+  137  ls /*/log
+  138  $((2 + 2))
+  139  echo $((2 + 2))
+  140  ls $((2 + 2))
+  141  echo $((2 - 2))
+  142  echo $((2 * 2))
+  143  echo $((2 % 2))
+  144  echo $((2 ** 2))
+  145  cat fichero$((1+1)).txt
+  146  echo {1,2,3}
+  147  echo fichero{1,2,3}.txt
+  148  echo fichero{1.100}.txt
+  149  echo fichero{1...100}.txt
+  150  echo fichero{1..100}.txt
+  151  ls
+  152  mkdir Directorio
+  153  cd Directorio/
+  154  ls
+  155  mkdir {1..5}
+  156  ls
+  157  rm {1..5}
+  158  rm -d {1..5}
+  159  ls
+  160  mkdir dir{1..5}
+  161  ls
+  162  echo {01..14}
+  163  echo {A..Z}
+  164  echo {A..z}
+  165  echo {A{1,2},B{2,4}}final
+  166  mkdir logs
+  167  cd logs/
+  168  mkdir {2020..2026}-{01..12}
+  169  ls
+  170  cd
+  171  info which
+  172  which cat
+  173  type cat
+  174  ls -la which cat
+  175  ls -la $(which cat)
+  176  python3
+  177  python3 -c 'print("hola mundo")'
+  178  echo $(python3 -c 'print("hola mundo 2")')
+  179  ls -la `which cat`
+  180  ls
+  181  ls -la fichero1.txt fichero2.txt 
+  182  ls -la                                fichero1.txt fichero2.txt 
+  183  ls -la                                fichero1.txt                                                                                          fichero2.txt 
+  184  echo esta frase tiene      varios                      espacios
+  185  ls
+  186  nano "nombre separado.txt"
+  187  ls
+  188  ls -la nombre\ separado.txt 
+  189  ls -la nombre separado.txt 
+  190  echo "esta frase tiene         espacios"
+  191  ls -la "nombre separado.txt"
+  192  mv "nombre separado.txt" nombre_separado.txt
+  193  ls
+  194  echo fichero*
+  195  echo "fichero*"
+  196  echo "la ruta de cat es: $(which cat)"
+  197  echo "la ruta de cat es: `which cat`"
+  198  echo "la suma de 2 + 2 es: $((2+2))"
+  199  echo "la suma de 2 + 2 es: $(2+2)"
+  200  echo $(ls)
+  201  echo "$(ls)"
+  202  echo "la ruta de cat es: $(which cat)"
+  203  echo 'la ruta de cat es: $(which cat)'
+  204  echo "esto es una comilla simple ''"
+  205  echo 'esto es una comilla simple ""'
+  206  clear
+  207  echo "esto es una expansion $(which cat), y esto no es una expansion $(wich cat)"
+  208  echo "esto es una expansion $(which cat), y esto no es una expansion $(which cat)"
+  209  echo "esto es una expansion $(which cat), y esto no es una expansion \$(which cat)"
+  210  clear
+  211  nano "fichero espacio.txt"
+  212  ls -la fichero\ espacio.txt
+  213  echo -e \a"
+  214  echo -e "\a"
+  215  echo -e "Este texto \t esta tabulado"
+  216  echo "esto es una \n nueva linea"
+  217  echo -e "esto es una \n nueva linea"
+  218  history > seccion_6.txt

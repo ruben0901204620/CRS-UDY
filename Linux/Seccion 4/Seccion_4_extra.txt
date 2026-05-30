@@ -1,0 +1,68 @@
+Listado de atajos para la shell de Linux
+A continuación os dejo un listado de algunos atajos interesantes para la shell de Linux. Os recomiendo que le echéis un ojo a todos y seleccionéis los que os resulten más cómodos para vuestro día a día.
+
+Ctrl + A → Ir al principio de la línea en la que se está escribiendo.
+
+Ctrl + E → Ir al final de la línea en la que se está escribiendo.
+
+Ctrl + L → Borra la pantalla, similar al comando clear
+
+Ctrl + U → Borra la línea anterior a la posición del cursor. Si está al final de la línea, borra toda la línea.
+
+Ctrl + H → Borra el carácter anterior a la posición del cursos. Igual que retroceso.
+
+Ctrl + R → Permite buscar entre los comandos utilizados anteriormente.
+
+Ctrl + C → Interrumpe la ejecución de un programa.
+
+Ctrl + D → Cierra la shell actual.
+
+Ctrl + W → Corta la palabra anterior a la posición cursor.
+
+Ctrl + K → Corta la línea siguiente a la posición del cursor.
+
+Ctrl + T → Intercambia los dos últimos caracteres anteriores a la posición del cursor.
+
+Esc + T → Intercambia las dos últimas palabras anteriores a la posición del cursor.
+
+Alt + . o !$ → Referencia el último argumento del comando anterior.
+
+Alt + F → Avanza el cursor una palabra en la línea actual.
+
+Alt + B → Retrocede el cursor una palabra en la línea actual.
+
+Alt + l/u → Convierte la palabra en mayúsculas o minúsculas.
+
+Tab → Autocompleta nombres de archivos y carpetas.
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+
+Curiosidad: ¿Qué significa "is hashed"?
+Realizando las secciones anteriores es muy probable que al ejecutar el comando type sobre algunos comandos de la shell de Linux hayáis obtenido un resultado similar al siguiente:
+
+santi@santi-virtual-machine:~/Desktop$ type which
+which is hashed (/usr/bin/which)
+
+
+¿Qué quiere decir que un comando determinado "is hashed"?
+
+Ya hemos visto que algunos programas externos de la shell, como el comando which, se encuentran en una ruta determinada del sistema de ficheros, en este caso, /usr/bin/which. Cada vez que nosotros ejecutamos un programa de este tipo, la shell debe resolver la ruta e ir a buscar el archivo externo para ejecutarlo.
+
+Para evitar tener que realizar todas estas acciones en comandos que utilizamos de manera muy frecuente, la shell puede mantener una lista de programas con su ruta asociada (entenderemos mejor en qué consiste la resolución de la ruta cuando hablemos del entorno y de la variable PATH en siguientes secciones del curso). Esta lista se llama tabla hash (hash table).
+
+Cuando la shell nos dice que un comando "is hashed", significa que ya ha resuelto su ruta y la ha guardado en la hash table para acceder a ella mucho más rápido.
+
+Si queréis comprobar qué comandos tenéis en la hash table, podéis ejecutar el comando hash en la shell de Linux.
+
+Por otro lado, si queréis eliminar todas las entradas de vuestra hash table y que ningún comando aparezca como "is hashed" podéis ejecutar el comando hash -r
+
+Tened en cuenta que aunque borréis la tabla, cuando volváis a ejecutar algunos comandos como which, la shell los añadirá de nuevo a la hash table para evitar resolver su ruta en el futuro.
+
+
+
+¡Espero que os haya resultado interesante y no

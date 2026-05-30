@@ -1,0 +1,107 @@
+    1  ls
+    2  ls asdfgh
+    3  ls /dev/stdout
+    4  ls -la /dev/stdout
+    5  la -la /proc/self/fd/1
+    6  ls -la /dev/pts/0
+    7  ls /dev/stderr
+    8  ls -la /dev/stderr
+    9  ls -la /proc/self/fd/2
+   10  ls -la /dev/stdin
+   11  ls -la  /proc/self/fd/0
+   12  ls -lah
+   13  ls -lah > salida_ls.txt
+   14  ls -l
+   15  less salida_ls.txt 
+   16  nano salida_ls.txt 
+   17  ls -lah asdfghjk > salida_ls.txt
+   18  cat salida_ls.txt 
+   19  > nuevoFichero.txt
+   20  ls -la
+   21  ls -lah > salida_ls.txt 
+   22  cat salida_ls.txt 
+   23  echo "Esto es una linea nueva en el fichero"
+   24  echo "Esto es una linea nueva en el fichero" >> salida_ls.txt
+   25  cat salida_ls.txt 
+   26  ls -l /dev/stdout
+   27  ls -l /dev/stderr
+   28  ls -l asdfgfg
+   29  ls -l asdfgfg 2>  error_ls.txt
+   30  cat error_ls.txt 
+   31  ls -lah 1> salida_ls.txt 
+   32  cat salida_ls.txt 
+   33  ls -lah > ls_salida.txt 2>&1
+   34  cat ls_salida.txt 
+   35  ls -lah asdfgh > ls_salida.txt 2>&1
+   36  cat ls_salida.txt 
+   37  ls -lah &> ls_salida.txt 
+   38  car ls_salida.txt 
+   39  cat ls_salida.txt 
+   40  ls -lah asdfgh &> ls_salida.txt 
+   41  cat ls_salida.txt 
+   42  ls -lah &>> ls_salida.txt 
+   43  cat ls_salida.txt 
+   44  clear
+   45  ls -lah /dev/null
+   46  find /var/log -name auth.log
+   47  find /var/log -name auth.log 2> find-error.txt
+   48  cat find-error.txt 
+   49  rm find-error.txt 
+   50  find /var/log -name auth.log 2> /dev/null
+   51  clear
+   52  cat fichero1.txt 
+   53  echo "contenido fichero1" > fichero1
+   54  echo "contenido fichero3" > fichero3
+   55  ls
+   56  cat fichero1 fichero2 fichero3 > fichero_total
+   57  echo "contenido fichero2" > fichero2
+   58  cat fichero1 fichero2 fichero3 > fichero_total
+   59  cat fichero_total 
+   60  catr fichero* > fichero_total2
+   61  cat fichero* > fichero_total2
+   62  cat fichero_total2
+   63  cat
+   64  cat > nuevo_fichero.txt
+   65  cat nuevo_fichero.txt 
+   66  cat < nuevo_fichero.txt 
+   67  clear
+   68  ls -l /usr/bin
+   69  ls -l /usr/bin > less
+   70  ls
+   71  cat less
+   72  less < ls -l /usr/bin 
+   73  ls -l /usr/bin | less
+   74  clear
+   75  man sort 
+   76  ls /usr/bin
+   77  ls /bin /usr/bin
+   78  ls /bin /usr/bin | sort | less
+   79  man uniq
+   80  ls /bin /usr/bin | sort | uniq | less
+   81  ls /bin /usr/bin | sort | uniq -d | less
+   82  man wc
+   83  wc /var/log/auth.log
+   84  wc -s /var/log/auth.log
+   85  wc -l /var/log/auth.log
+   86  ls /bin /usr/bin | sort | uniq | wc -l 
+   87  ls /bin /usr/bin | sort | wc -l 
+   88  clear
+   89  man grep
+   90  grep luchdev /var/log/auth.log
+   91  grep -i luchdev /var/log/auth.log
+   92  grep -v luchdev /var/log/auth.log
+   93  grep -i luchdev* /var/log/auth.log
+   94  ls /usr/bin | sort | uniq | grep zip
+   95  ls /usr/bin | sort | uniq | grep cat
+   96  head /var/log/auth.log
+   97  tail /var/log/auth.log
+   98  ls /usr/bin | head -n 5
+   99  ls /usr/bin | tail -n 5
+  100  tial -f  /usr/bin/auth.log 
+  101  tail -f  /usr/bin/auth.log 
+  102  tail -f /var/bin/auth.log 
+  103  tail -f /var/log/auth.log 
+  104  ls /bin /usr/bin | sort | tee fichero_sort.txt | uniq | grep cat 
+  105  ls
+  106  less fichero_sort.txt 
+  107  history > Seccion_7.txt

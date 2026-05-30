@@ -1,0 +1,238 @@
+  327  id
+  328  cat /etc/passwd
+  329  grep luchdev /etc/passwd
+  330  cat etc/shadow
+  331  sudo cat etc/shadow
+  332  sudo cat /etc/shadow
+  333  cat /etc/group
+  334  clear
+  335  ls -lh
+  336  id
+  337  fing /var/log -name auth.log
+  338  ls /var/log -name auth.l
+  339  ls -ald /var/log/gdm3
+  340  id
+  341  ls /var/log/gdm3
+  342  clear
+  343  cat /etc/passwd | less
+  344  cat /etc/shadow
+  345  ls -la /etc/shadow
+  346  cd /proc/
+  347  ls -la
+  348  ccd
+  349  cd
+  350  ls -la /etc/shadow
+  351  clear
+  352  ls -la
+  353  type chmod
+  354  man chmod
+  355  ls -la fichero1
+  356  echo "fichero de pruebas " > fichero_pruebas.txt
+  357  ls -la fichero_pruebas.txt 
+  358  chmod 600 fichero_pruebas.txt
+  359  ls -la fichero_pruebas.txt 
+  360  ls -la /etc/shadow
+  361  chmod 666 /etc/shadow
+  362  clear
+  363  ls -la fichero1
+  364  chmod a=r fichero1
+  365  ls -la fichero1
+  366  chmod u+w,g+w fichero1
+  367  ls -la fichero1
+  368  chmod g-w fichero1
+  369  ls -la fichero1
+  370  chmod g+x, o+x fichero1
+  371  chmod g+x,o+x fichero1
+  372  ls -la fichero1
+  373  clear
+  374  rm fichero.txt
+  375  echo "fichero de pruebas " > fichero.txt
+  376  ls -ls fichero.txt 
+  377  umask
+  378  umask 0000
+  379  rm fichero.txt 
+  380  > fichero.txt
+  381  ls -la fichero.txt 
+  382  umask 0006
+  383  rm fichero.txt 
+  384  > fichero.txt
+  385  ls -la fichero.txt 
+  386  nano fichero4.txt
+  387  ls -la fichero4.txt 
+  388  umask 0002
+  389  history
+  390  umask
+  391  rm fichero*
+  392  echo "Fichero de pruebas" fichero.txt
+  393  echo "Fichero de pruebas" > fichero.txt
+  394  ls -la fichero.txt 
+  395  chmod 4770 fichero.txt 
+  396  ls -la fichero.txt 
+  397  chmod 2770 fichero.txt 
+  398  ls -la fichero.txt 
+  399  mkdir tesdit
+  400  cd tesdit
+  401  ls
+  402  mkdir subtesdir
+  403  ls
+  404  echo "fichero nuevo" subtesdir/ficheroNuevo.txt
+  405  echo "fichero nuevo" > subtesdir/ficheroNuevo.txt
+  406  ls
+  407  mv subtesdir/ficheroNuevo.txt ../
+  408  ls
+  409  ls subtesdir/
+  410  cd ..
+  411  ls
+  412  mv ficheroNuevo.txt /subtest
+  413  sudo mv ficheroNuevo.txt /subtest
+  414  cd tesdit
+  415  ls
+  416  ls subtesdir/
+  417  cd ..
+  418  ls
+  419  find  / -name -d /subtest 
+  420  find  / -name -d "/subtest" 
+  421  find  / -name /subtest 
+  422  find  / -name /subtest 2> /dev/null
+  423  ls
+  424  cd tesdit/
+  425  ls
+  426  echo "fichero de prueba" > ficheroNuevo.txt
+  427  ls
+  428  ls -lad tesdit
+  429  ls -lad /tesdit
+  430  cd
+  431  ls -lad tesdit/
+  432  chmod 1770 tesdit/
+  433  ls -lad tesdit/
+  434  cd tesdit/
+  435  ls -la ficheroNuevo.txt 
+  436  chmod 777 ficheroNuevo.txt 
+  437  ls -la ficheroNuevo.txt 
+  438  la cd ..
+  439  ls cd..
+  440  ls
+  441  ls -lad ficheroNuevo.txt 
+  442  cd 
+  443  clear
+  444  sudo adduser testuser
+  445  cat /etc/password
+  446  cat /etc/passwd
+  447  man su
+  448  su testuser
+  449  owd
+  450  pwd
+  451  su - testuser
+  452  cat /etc/passwd
+  453  su root
+  454  clear
+  455  man sudo
+  456  cat /etc/shadow
+  457  ls -la /etc/shadow
+  458  sudo cat /etc/shadow
+  459  sudo -i
+  460  ls -la /etc/sudoers
+  461  cat /etc/sudoers
+  462  sudo cat /etc/sudoers
+  463  sudo nano /etc/sudoers
+  464  sudo visudo 
+  465  id
+  466  su testuser 
+  467  sudo visudo /etc/dusoers.d/config
+  468  sudo visudo /etc/sudooers.d/config
+  469  sudo visudo /etc/sudoers.d/config
+  470  type cat
+  471  sudo visudo /etc/sudoers.d/config
+  472  su testuser 
+  473  sudo cat /etc/sudoers.d/config
+  474  sudo visudo /etc/sudoers.d/config
+  475  cd /etc/sudoers.d
+  476  ls
+  477  sudo rm config 
+  478  ls
+  479  visudo
+  480  sudo visudo
+  481  sudo usermod -aG sudo testuser 
+  482  su testuser 
+  483  cd
+  484  clear
+  485  man useradd
+  486  adduser newuser
+  487  sudo adduser newuser
+  488  cat /etc/paswd
+  489  cat /etc/passwd
+  490  K
+  491  ls /home/
+  492  man adduser
+  493  man groupadd
+  494  sudo addgroup newgroup
+  495  cat /etc/group
+  496  groups
+  497  man usermod
+  498  groups newuser 
+  499  id newuser 
+  500  sudo usermod -a -G newgroup newuser 
+  501  id newuser 
+  502  sudo usermod -g newgroup newuser 
+  503  id newuser 
+  504  sudo usermod -l newuser2 newuser 
+  505  cat /etc/passwd
+  506  sudo usermod -d /home/luchdev newuser2
+  507  cat /etc/passwd
+  508  sudo usermod -u 250 newuser2 
+  509  cat /etc/passwd
+  510  id newuser2 
+  511  man passwd
+  512  sudo passwd newuser2 
+  513  man delgroup
+  514  sudo delgroup newgroup
+  515  id newuser2 
+  516  sudo delgroup newgroup
+  517  id newuser2 
+  518  sudo deluser newuser2
+  519  cat /etc/passwd
+  520  cat /etc/group
+  521  sudo delgroup newgroup
+  522  cat /etc/group
+  523  ls /home/
+  524  sudo deluser --remove-all-home newuser
+  525  sudo deluser --remove-all-files newuser
+  526  ls /home/
+  527  sudo deluser --remove-all-files newuser
+  528  cd /home/
+  529  ls
+  530  sudo rm -rf newuser/
+  531  ls
+  532  clear
+  533  cd
+  534  echo "fichero prueba" > prueba.txt
+  535  ls -la prueba.txt 
+  536  man chown
+  537  la -la prueba.txt 
+  538  sudo chmod 770 prueba.txt 
+  539  ls -la prueba.txt 
+  540  cat prueba.txt 
+  541  sudo chown testuser: prueba.txt 
+  542  ls -la prueba.txt 
+  543  cat prueba.txt 
+  544  sudo chown :testuser prueba.txt
+  545  ls -la prueba.txt 
+  546  cat prueba.txt 
+  547  sudo chown luchdev:luchdev prueba.txt 
+  548  ls -la prueba.txt 
+  549  cat prueba.txt 
+  550  mkdir prueba
+  551  ls -lad prueba
+  552  sudo chown luchdev: prueba
+  553  ls plad prueba
+  554  ls -lad prueba
+  555  sudo chown testuser: prueba
+  556  ls -lad pe
+  557  ls -lad prueba
+  558  sudo chown luchdev:testuser prueba
+  559  ls -lad prueba
+  560  ls -la prueba
+  561  ls -la prueba.txt 
+  562  sudo chgrp sudo prueba.txt 
+  563  ls -la prueba.txt 
+  564  history > Seccion_8.txt

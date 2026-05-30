@@ -1,0 +1,12 @@
+Extra: Comando sed
+sed es otro comando interesante que es posible que os resulte de utilidad en algunas ocasiones. Su función principal es reemplazar texto de un fichero. Sin embargo, puede combinarse con los comandos que hemos visto en este tema utilizando pipelines para realizar otras muchas tareas.
+
+Os animo a que le echéis un ojo a esta herramienta antes de pasar a la siguiente sección y os planteeis algunos casos de uso como los siguientes.
+
+Reemplazar o sustituir una cadena de texto en un fichero
+
+Reemplazar una cadena de texto en una línea determinada de un fichero
+
+Añadir un carácter al comienzo de cada línea de un fichero
+
+Para el que quiera profundizar sobre el uso de sed, le recomiendo que revise la siguiente referencia: https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/

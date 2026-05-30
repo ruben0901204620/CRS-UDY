@@ -1,0 +1,252 @@
+   23  tree /
+   24  tree -L 1/
+   25  tree -L 1 /
+   26  tree -L 2/
+   27  tree -L 2 /
+   28  clear
+   29  pwd
+   30  ls
+   31  ls -t
+   32  ls -l
+   33  ls -lh
+   34  la -a
+   35  cd /home
+   36  ls
+   37  cd /
+   38  ls
+   39  cd
+   40  cd /home/ruben/Escritorio/
+   41  cd
+   42  ls
+   43  cd Escritorio/
+   44  ls
+   45  ls -a
+   46  cd .
+   47  cd ..
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd ruben/Escritorio/
+   52  cd ../..
+   53  cd /
+   54  ls
+   55  cd
+   56  pwd
+   57  cd /
+   58  ls
+   59  cd ~
+   60  cd -
+   61  clear
+   62  cd
+   63  ls
+   64  mldir test
+   65  clear
+   66  ls
+   67  mkdir test
+   68  ls
+   69  cd test/
+   70  cd .
+   71  cd ..
+   72  ls
+   73  mkdir Test
+   74  ls
+   75  Ls
+   76  mkdir test_directory
+   77  ls
+   78  pico
+   79  ls
+   80  pico
+   81  ls
+   82  nano
+   83  vi
+   84  emacs
+   85  emacs --help
+   86  emacs -nw
+   87  ls
+   88  nano fichero.txt
+   89  ;s
+   90  ls
+   91  clear
+   92  cd /
+   93  ls
+   94  cd var/
+   95  cd log/
+   96  ls
+   97  file lastlog
+   98  file auth.log
+   99  file sssd
+  100  file syslog
+  101  cd
+  102  ls
+  103  cd Descargas/
+  104  ls
+  105  file images.jpeg 
+  106  cd /var/log
+  107  ls
+  108  file auth.log
+  109  nano auth.log
+  110  type cat 
+  111  cat auth.log
+  112  more auth.log
+  113  type less
+  114  less auth.log
+  115  ls
+  116  ls openvpn
+  117  ls apt
+  118  cd
+  119  clear
+  120  nano fichero.txt 
+  121  mkdir directorio1
+  122  ls
+  123  cat fichero.txt 
+  124  type cp
+  125  cp fichero.txt fichero2.txt 
+  126  ls
+  127  cat fichero2.txt 
+  128  nano fichero2.txt 
+  129  cat fichero.txt 
+  130  cat fichero2.txt 
+  131  cp fichero.txt fichero2.txt 
+  132  cat fichero2.txt 
+  133  cp -i fichero.txt fichero2.txt 
+  134  cp -i fichero.txt fichero3.txt 
+  135  ls
+  136  cd directorio1/
+  137  ls
+  138  cd
+  139  ls
+  140  cp fichero.txt fichero2.txt fichero3.txt directorio1/ 
+  141  ls
+  142  ls directorio1/
+  143  cp directorio1/ directorio2/
+  144  cp -r directorio1/ directorio2/
+  145  ls
+  146  ls directorio2/
+  147  type mv
+  148  nano ficheroMV.txt
+  149  l
+  150  ls
+  151  mv ficheroMV.txt directorio1/
+  152  ls
+  153  ls directorio1/
+  154  ls
+  155  mkdir directorioMover
+  156  ls
+  157  mv directorioMover/ directorio1/
+  158  ls
+  159  ls directorio1/
+  160  cd directorio1/
+  161  ls
+  162  mv fichero.txt fichero1.txt
+  163  ls
+  164  cd ..
+  165  ls
+  166  mv test_directory/ directorio3
+  167  ls
+  168  ls directorio3/
+  169  cd directorio1/
+  170  ls
+  171  cd
+  172  ls
+  173  cd directorio1/ && ls
+  174  mv -u fichero2.txt fichero3.txt ../
+  175  cd .. && ls
+  176  info cp
+  177  ls
+  178  type rm
+  179  ls
+  180  rm fichero.txt 
+  181  ls
+  182  rm fichero2.txt fichero3.txt 
+  183  ls
+  184  rm directorio1/
+  185  rm -r directorio1/
+  186  ls
+  187  ls directorio2/
+  188  rm -r directorio2/
+  189  ls
+  190  rm -rf directorio3/ Es_es_una_prueba.txt
+  191  ls
+  192  rm Esto_es_una_prueba.txt
+  193  ls
+  194  rm -rf seccion_4.txt texto_pico
+  195  ls
+  196  rm test/
+  197  rm -r test/
+  198  ls
+  199  rm -r Test/
+  200  ls
+  201  type find 
+  202  find /var/log /home/ruben -name auth.log
+  203  find /var -name auth.log
+  204  find /var -name auth.log 2> /dev/null
+  205  find /var -name auth.log -ls 2> /dev/null
+  206  find . -name auth.log
+  207  find /var/log -name '*.log' 2> /dev/null
+  208  find / -name log -type d
+  209  find / -name log -type d 2> /dev/null
+  210  find /var/log -name '
+  211  *' -user ruben 
+  212  find /home/ruben -name '*' -user ruben 
+  213  info find
+  214  fistory
+  215  history
+  216  tree / -1
+  217  clea
+  218  clear
+  219  tree / -L 1
+  220  cd /
+  221  ls
+  222  cd bin
+  223  ls
+  224  cd ..
+  225  ls
+  226  cd dev
+  227  cd ..
+  228  cd lib
+  229  cd ..
+  230  cd cdrom
+  231  cd ..
+  232  cd dev
+  233  cd ..
+  234  cd etc
+  235  cd ..
+  236  cd home
+  237  cd ..
+  238  cd lib64
+  239  cd //
+  240  cd ..
+  241  pwd
+  242  cd
+  243  cd ..
+  244  ls
+  245  cd lost+found/
+  246  cd media/
+  247  cd ..
+  248  cd mnt
+  249  cd ..
+  250  cd opt/
+  251  cd ..
+  252  cd proc/
+  253  cd ..
+  254  ls
+  255  cd root/
+  256  cd run/
+  257  cd ..
+  258  cd sbin/
+  259  cd ..
+  260  cd snap/
+  261  cd ..
+  262  cd srv/
+  263  cd ..
+  264  cd sys/
+  265  cd ..
+  266  cd tmp/
+  267  cd ..
+  268  cd usr/
+  269  cd ..
+  270  cd var/
+  271  cd ..
+  272  ls
+  273  cd
+  274  history > Seccion_5.txt

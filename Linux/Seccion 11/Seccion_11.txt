@@ -1,0 +1,113 @@
+    1  man dpkg
+    2  man apt
+    3  sudo apt update
+    4  nano /etc/apt/source.list
+    5  nano /etc/apt/sources.list
+    6  nano /etc/apt/sources.list.d/ubuntu.sources
+    7  apt-cache search openssh-server
+    8  apt-cache search emacs
+    9  apt-cache search mosco
+   10  apt-cache search mosquitto
+   11  sudo apt install openssh-server
+   12  sudo apt install emacs
+   13  clear
+   14  apt-cache search nessus
+   15  apt-cache search cursor
+   16  cd Descargas/
+   17  ls
+   18  sudo dpkg -i cursor_3.5.33_amd64.deb
+   19  cursor &
+   20  cd
+   21  clear
+   22  sudo apt remove cursor
+   23  cursor &
+   24  sudo apt upgrade
+   25  cd Descargas/
+   26  LS
+   27  ls
+   28  dpkg -l
+   29  ls
+   30  sudo dpkg -i cursor_3.5.33_amd64.deb
+   31  sudo dkpg -l | grep cursor
+   32  sudo dpkg -l | grep cursor
+   33  sudo dpkg -l | grep emacs
+   34  sudo dpkg -s cursor
+   35  sudo dpkg -s emacs
+   36  dpkg --status cursor
+   37  apt show cursor
+   38  apt show emacs
+   39  ewefwefweefefwfewfewefwfewfewefwfewewefwefweffewefewewfewefwewfewewefwefwewfeweweefwewfewfefwewef
+   40  sudo service cursor status
+   41  cd /
+   42  ls
+   43  cd opt
+   44  ls
+   45  ls -la
+   46  cd ..
+   47  ls
+   48  cd bin
+   49  ls
+   50  ls tail cursor
+   51  ls
+   52  cd cursor
+   53  ls -la
+   54  cd
+   55  cd /usr/share/cursor/bin/cursor
+   56  cd /usr/share/cursor/bin
+   57  ls
+   58  cd
+   59  dpkg -S /usr/share/cursor/bin
+   60  cd /usr/bin
+   61  ls
+   62  ls -la emacs
+   63  ls -la cursor
+   64  dkpg -S cursor\
+   65  dkpg -S cursor
+   66  dpkg -S cursor
+   67  dpkg -S /usr/bin/cursor
+   68  ls -la /usr/bin/cursor
+   69  ls -la /usr/share/cursor/bin/cursor
+   70  dpkg -l | grep cursor
+   71  cd
+   72  sudo nano /etc/apt/source.list
+   73  sudo nano /etc/apt/sources.list
+   74  cd /etc/apt/sources.list.d
+   75  ls
+   76  cd
+   77  sudo add-apt-repository "deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware"
+   78  cd /etc/apt/sources.list.d
+   79  ls
+   80  nano ubuntu.sources
+   81  sudo apt update
+   82  ls
+   83  ls -la
+   84  ls
+   85  nano cursor.sources
+   86  cd
+   87  cd /etc/apt/sources.list
+   88  cd /etc/apt/
+   89  ;s
+   90  ls
+   91  nano sources.list
+   92  cd
+   93  ls
+   94  cd Descargas/
+   95  ls
+   96  wget 'https://archive.kali.org/archive-key.asc'
+   97  ls
+   98  file archive-key.asc 
+   99  ls
+  100  sudo apt-key add archive-key.asc\
+  101  sudo apt-key add archive-key.asc
+  102  sudo apt update
+  103  cd
+  104  ls
+  105  apt-cache search snort
+  106  cd /etc/apt
+  107  ls
+  108  nano source.list
+  109  nano sources.list
+  110  sudo rm sources.list
+  111  sudo apt update
+  112  cd
+  113  history > Seccion_11.txt

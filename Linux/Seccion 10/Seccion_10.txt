@@ -1,0 +1,164 @@
+
+  718  sudo wireshark
+  719  manip
+  720  man ip
+  721  ip link help
+  722  ip link
+  723  ip l
+  724  ip l show dev ens33
+  725  ip -s link 
+  726  ip -s link
+  727  ping localhost
+  728  ip -s link
+  729  ip l ls up
+  730  ip l set ens33 down
+  731  sudo ip l set ens33 down
+  732  ip l
+  733  sudo ip l set ens33 up
+  734  ip l
+  735  man ip 
+  736  ip addres
+  737  ip a
+  738  ip -6 a
+  739  ip a 
+  740  ip a add 192.168.214.188/24 dev ens33
+  741  sudo ip a add 192.168.214.188/24 dev ens33
+  742  ip a
+  743  ip a del 192.168.214.188/24 dev ens33
+  744  sudo ip a del 192.168.214.188/24 dev ens33
+  745  ip a
+  746  clear
+  747  man ip
+  748  ip route
+  749  ip a
+  750  sudo apt install traceroute
+  751  man traceroute
+  752  ip r
+  753  sudo traceroute -T www.google.com
+  754  sudo traceroute -T 192.168.214.2
+  755  ip r
+  756  sudo ip r add default via 192.168.214.3
+  757  ip r
+  758  traceroute -T www.google.com
+  759  ip r
+  760  sudo traceroute -T www.google.com
+  761  sudo ip r del default via 192.168.214.3
+  762  ip r
+  763  sudo traceroute -T www.google.com
+  764  man tcpdump
+  765  tcpdump -h
+  766  sudo tcpdump -i ens33
+  767  sudo tcpdump -v -i ens33
+  768  sudo apt intall wireshark
+  769  sudo apt install wireshark
+  770  man wireshark
+  771  sudo wireshark
+  772  clear
+  773  man ping
+  774  ip a
+  775  ping 192.168.214.176
+  776  ping 192.168.214.2
+  777  ping -c 3 192.168.214.2
+  778  sudo apt install nmap
+  779  man nmap
+  780  nmap -h
+  781  ip a
+  782  sudo nmap -sS 192.168.214.0/24
+  783  clear
+  784  ip a
+  785  man dhclient
+  786  info dhclient
+  787  help dhclient
+  788  sudo dhclient
+  789  sudo apt install dhclient
+  790  ip a
+  791  man dig
+  792  dig
+  793  sudo nano /etc/resolv.conf
+  794  cat /etc/resolv.conf
+  795  dig
+  796  echo reboot
+  797  sudo apt install curl
+  798  man curl
+  799  curl https://winrar.es/descargas
+  800  curl https://winrar.es/descargas > winrar.html
+  801  ls
+  802  firefox winrar.html 
+  803  curl https://pagina.recurso{1..4}.txt
+  804  curl -O https://d.winrar.es/d/97z1779813225/RzRt3qq_x7NlxRC05m-j0w/rarlinux-x64-722.tar.gz
+  805  ls
+  806  curl -o winrar2.html https://winrar.es/descargas 
+  807  ls
+  808  echo curl -x proxy_name:port url 
+  809  echo curl -u user:copntrasena -x proxy_name:port url 
+  810  man wget
+  811  wget https://ubuntu.com/download/desktop/thank-you?version=26.04&architecture=amd64&lts=true
+  812  wget https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso
+  813  ls
+  814  rm ubuntu-26.04-desktop-amd64.iso 
+  815  ls
+  816  wget -b  https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso
+  817  ls wget-log.1
+  818  tial wget-log.1
+  819  tail wget-log.1
+  820  wget -i fichero.txt -o nombre
+  821  wget -o pagina https://ubuntu.com/download/desktop
+  822  ls
+  823  nano pagina 
+  824  tail wget-log.1
+  825  ls
+  826  rm ubuntu-26.04-desktop-amd64.iso
+  827  ls
+  828  clear
+  829  man ssh
+  830  ip a
+  831  reboot
+  832  ip a
+  833  ping 192.168.1.103
+  834  man ssg
+  835  man ssh
+  836  clear
+  837  ssh
+  838  sudo apt install openssh-server
+  839  sudo service ssh status
+  840  ssh osboxes@192.168.1.103
+  841  clear
+  842* 
+  843  sudo apt install vsftpd
+  844  sudo service vsftpd status
+  845  ftp 192.168.1.103
+  846  clear
+  847  ftp 192.168.1.103
+  848  sftp
+  849  man sftp
+  850  sftp demo@test.rebex.net
+  851  clear
+  852  man ss
+  853  ss -a 
+  854  ss -a
+  855  ss -a | more
+  856  ss -a
+  857  ss -a | grep ssh
+  858  ss -a
+  859  ss -ta
+  860  ss -ua
+  861  ss -t
+  862  ss -u
+  863  ss -t
+  864  ss -a
+  865  ss -u
+  866  ss -tu
+  867  ss --help
+  868  clear
+  869  sudo apt install net-tools
+  870  man netstat
+  871  netstat -nr
+  872  netstat -a
+  873  netstat -at
+  874  netstat -au
+  875  netstat -l
+  876  sudo netstat -pnltu
+  877  sudo netstat -pntu
+  878  sudo netstat -s
+  879  clear
+  880  history > Seccion_10.txt

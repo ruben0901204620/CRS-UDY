@@ -1,0 +1,94 @@
+/*
+la etiqueta "*" nos sirve para seleccionar todos los campos y quitarle el padding y margin.
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*
+css aplicado a la clase principal del html.
+*/ 
+.principal {
+    width: 100%;
+    height: 600px;
+}
+/*
+css aplicado a la clase formulario del html.
+*/
+.formulario {
+    background-color: rgb(29, 27, 27);
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 150px ;
+    height: 400px;
+    border-bottom: rgb(4,75,4) 20px solid;
+    border-radius: 10px;
+
+}
+/*
+css aplicado al formulario html.
+*/
+form {
+    color: white;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+/*
+css aplciado a cada uno de los elementos dentro de nuestro formulario.
+*/
+.subtitulo {
+    width: 100%;
+    height: 100px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+.tusuario {
+    margin-left: 90px;
+}
+
+.tucontraseña {
+    margin-left: 150px;
+}
+
+.iusuario {
+    width: 160;
+    margin-left: 35px;
+}
+
+.icontraseña {
+    width: 160px;
+    margin-left: 60px;
+}
+
+input {
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: rgb(4,75,4) 3px solid;
+    overflow: none;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+button {
+    margin-top: 140px;
+    margin-left: 160px;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: rgb(4,75,4) 3px solid;
+    color: white;
+}

@@ -1,0 +1,241 @@
+// Seleccionar base de datos.
+USE base1;
+
+// Crear tablas.
+CREATE TABLE usuarios (id int(2) primary key, nombre varchar(50) , apellido varchar(50) , correo varchar(100));
+SELECT * FROM base1.usuarios;
+
+*********************************************************************************************************************
+
+USE base1;
+
+// INgresar datos a una tabla.
+INSERT INTO usuarios VALUES ( 2 , 'Pedro' , 'Pascal' , 'PedroP@gmail.com');
+SELECT * FROM base1.usuarios;
+
+
+*********************************************************************************************************************
+
+SENTENCIA SELECT
+
+USE world;
+// Seleccionar todo, desde el nombre de la base de datos seguido del nombre de la tabla.
+SELECT * FROM world.city;
+SELECT Name FROM world.city;
+SELECT ID , Name , District FROM world.city;
+
+USE base1;
+// Seleccionar el nombre de la columna para cambiarlo por otro nombre.
+SELECT nombre as Nombre FROM base1.usuarios;
+SELECT nombre as Nombre , id as ID , apellido as Apeliido , correo as Correo FROM base1.usuarios;
+
+
+*********************************************************************************************************************
+
+Sentencia WHERE
+
+USE world;
+// Seleccionar la tabla country y que filre la columna Name con el nombre "Guatemala".
+SELECT * FROM world.country WHERE Name = "Guatemala";
+SELECT * FROM world.country WHERE Continent = "Asia";
+SELECT * FROM world.country WHERE Capital < 150;
+SELECT * FROM world.country WHERE Capital > 1000;
+// Que nos muestre la tabla country y que nos nos muestre las regiones que sean "diferentes" a "Northern Africa"
+SELECT * FROM world.country WHERE Region <> "Northern Africa";
+
+*********************************************************************************************************************
+
+Sentencia DISTINCT
+
+USE world;
+// Muestra datos distintos de la columna "CountryCode" de la base de datos world de la tabla city.
+SELECT DISTINCT (CountryCode) FROM world.city;
+
+*********************************************************************************************************************
+
+Sentencia ORDER BY
+USE world;
+// Ordena la tabla "population" de forma descendente.
+SELECT * FROM world.city ORDER BY Population DESC;
+
+// Ordena la tabla "population" de forma ascendente.
+SELECT * FROM world.city ORDER BY Population ASC;
+
+// Ordena la tabla "Name" de la 'A' a la 'Z'.
+SELECT * FROM world.city ORDER BY  Name ASC;
+
+// Ordena la tabla "Name" de la 'Z' a la 'A'.
+SELECT * FROM world.city ORDER BY  Name DESC;
+
+*********************************************************************************************************************
+
+Operadores Booleanos
+
+USE world;
+// Muestra el continente de "Africa" y muestra la reion "Central Africa".
+SELECT * FROM world.country WHERE Continent = "Africa" AND Region = "Central Africa";
+
+// Muestra el codigo "GTM" o que muestre el continente "North America"
+SELECT * FROM world.country WHERE Code = "GTM" or Continent= "North America";
+
+// No Muestra la Region "Southern Europe".
+SELECT * FROM world.country WHERE NOT Region = "Southern Europe";
+
+*********************************************************************************************************************
+
+Sentencia IN
+
+USE world;
+// Una forma diferente de buscar sin ser redundante con "OR" buscando en la misma columna.
+SELECT * FROM world.country WHERE Continent IN ("Africa" , "North America") 
+AND Region IN ("Caribbean" , "Central Africa");
+
+*********************************************************************************************************************
+
+Sentencia BETWEEN
+
+USE world;
+
+// Selecciona el rango de la columna "Population" entre 1 y 1,000,000. y que lo muestre descendente.
+SELECT * FROM world.city WHERE Population BETWEEN 1 AND 1000000 ORDER BY population DESC;
+SELECT * FROM world.city WHERE Population BETWEEN (1 AND 10000000) AND ID BETWEEN 1 AND 100;
+
+// Muestra los resultados de la columan "Population" que no este entre 1 y 1,000,000.
+SELECT * FROM world.city WHERE Population NOT BETWEEN 1 AND 10000000;
+
+*********************************************************************************************************************
+
+Sentencia LIKE
+
+USE world;
+
+// en la columna "Lenguage" filtra los caracteres que inicien con "S"
+SELECT * FROM world.countrylanguage WHERE language LIKE 'S%';
+SELECT * FROM world.countrylanguage WHERE language LIKE '%o';
+SELECT * FROM world.countrylanguage WHERE language LIKE '%ma%';
+SELECT * FROM world.countrylanguage WHERE language LIKE 'F%l' ;
+
+*********************************************************************************************************************
+
+Concatenar y SUM
+USE world;
+SELECT * FROM world.country;
+
+// Suma la columna "SurfaceArea" con la columna "Population".
+SELECT SurfaceArea + Population FROM world.country;
+
+*********************************************************************************************************************
+
+Sentencia COUNT, MIN, MAX y AVG
+
+USE world;
+
+// Muestra el total de registros que hay.
+SELECT COUNT(*) FROM world.city;
+
+// Muestra el valor minimo de la columna "Population".
+SELECT MIN(Population) FROM world.city;
+
+// Muestra el valor maximo de la columna "Popuattion".
+SELECT MAX(Population) FROM world.city;
+
+// Muestra la media de la columna "Population".
+SELECT AVG(Population) FROM world.city;
+
+*********************************************************************************************************************
+
+Sentencia GROUP BY
+
+USE world;
+SELECT Language FROM world.countrylanguage GROUP BY Language;
+
+*********************************************************************************************************************
+
+Otras Funciones
+
+USE world;
+
+// Muestra los registros en mayusculas de la columna "Name" y lo muestre en otra columna llamada "mayus".
+SELECT * , UCASE(Name) as "Mayus" FROM world.city;
+
+// Muestra los registro en minuscula de la columa "CountryCode" y lo muestre en otra columna llamada "Minus".
+SELECT * , LCASE(CountryCode) as "Minus" FROM world.city;
+
+// Otra manera de concatenar. Se selecciona las 2 columnas y luego que se concatene con "CONCAT".
+SELECT Name, District, CONCAT(Name , "-" , District) FROM world.city;
+
+// Agrega un espacio autimaticamente en vez de agregarlo en cada concatenacion.
+SELECT Name, District, CONCAT_WS("-", District, Name, Population) FROM world.city;
+
+// Redondea los valores decimales a enteo con "LIFEEXPECTANCY".
+SELECT LIFEEXPECTANCY, ROUND(LIFEEXPECTANCY , 0) FROM world.country;
+
+//Muestra el total de caracteres de cada registro.
+SELECT Continent , CHAR_LENGTH(Continent) FROM world.country;
+
+*********************************************************************************************************************
+
+Sentencia CASE
+
+USE world;
+
+SELECT Percentage, 
+CASE
+    //Cuando "Percentage" es menor que 10, entonces muestre un mensaje.
+    WHEN Percentage < 10 THEN "Es menor a 10."
+    //Cuando "Percentage" es mayor que 10, entonces muestre un mensaje.
+    WHEN Percentage > 10 THEN "Es mayor a 10."
+    ELSE "La cicfra es diferente."
+END AS Condiciones FROm world.countrylanguage ORDER BY Percentage ASC;
+
+*********************************************************************************************************************
+
+UPDATE
+
+USE world;
+
+// Actualizar la tabla country seleccionando la columna "Name" agregando el nuevo nombre, buscandolo en el "Code"
+UPDATE country SET Name = "El Salvador" WHERE Code = "ABW";
+
+
+USE world;
+// Actualisa la tabla contry seleccionando la columna "Name" agregando todos los registros con el nombre "El Salvador"
+UPDATE Country SET Name = "El Salvador" WHERE Continent = "Asia";
+
+
+*********************************************************************************************************************
+
+ALTER TABLE
+
+USE world;
+//Agreaga una nueva columna en la tabla "city" llamada "country"
+ALTER TABLE city ADD COLUMN Country VARCHAR(50);
+SELECT * FROM world.city;
+
+
+*********************************************************************************************************************
+
+DROP y DELETE
+
+USE world;
+//Se seleccciona la tabla, luego se selecciona la columna que se quiera eliminar.
+ALTER TABLE city DROP COLUMN Population;
+SELECT * FROM world.city;
+
+USE base1;
+// Elimina el segundo registro de la columna "id"
+DELETE FROM usuarios WHERE id = 2; 
+SELECT * FROM base1.usuarios;
+
+USE base2;
+//Elimina la base de datos llamada "base2".
+DELETE FROM base2;
+
+
+
+
+
+
+
+
+

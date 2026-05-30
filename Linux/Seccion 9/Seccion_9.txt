@@ -1,0 +1,136 @@
+    1  ls /etc/bin
+    2  ls /usr/bin
+    3  cd /proc
+    4  ls
+    5  emacs
+    6  cd
+    7  clear
+    8  man ps
+    9  ps
+   10  ps x
+   11  man ps
+   12  ps aux
+   13  ps aux | less
+   14  ps aux 
+   15  clear
+   16  man top
+   17  top
+   18  clear
+   19  ps x
+   20  clear
+   21  ps
+   22  emacs &
+   23  ps x
+   24  ps
+   25  jobs
+   26  nano &
+   27  jobs
+   28  ps
+   29  emacs
+   30  bg%3
+   31  bg %3
+   32  fg %3
+   33  clear
+   34  man kill
+   35  emacs &
+   36  ps
+   37  TSTP / 20
+   38  kill -20 10617
+   39  ps x
+   40  kill -18 10617
+   41  kill -STOP 10617
+   42  kill -CONT 10617
+   43  kill -2 10617
+   44  ps
+   45  emacs &
+   46  kill -KILL 10617
+   47  ps
+   48  kill -KILL 10784
+   49  ps
+   50  kill>9 TEMR>15
+   51  kill -l
+   52  man kill
+   53  emacs &
+   54  man kill
+   55  killall emacs
+   56  emacs &
+   57  ps aux
+   58  su testuser 
+   59  ps
+   60  su testuser 
+   61  clear
+   62  ps aux
+   63  ls /etc/init.d
+   64  cat /etc/initt.d/cron
+   65  cat /etc/init.d/cron
+   66  ls /etc/init.d
+   67  ls /etc/init
+   68  cat /etc/init.d/whoopsie
+   69  ls /etc/default
+   70  ls /etc/init.d/cron
+   71  clear
+   72  cd /etc/init.d
+   73  ls
+   74  cat apparmor 
+   75  ./apparmor status
+   76  ./apparmor stop
+   77  ./apparmor status
+   78  ./apparmor start
+   79  ./apparmor status
+   80  cd 
+   81  man systemctl
+   82  systemctl stop apparmor
+   83  sudo systemctl status apparmor
+   84  sudo systemctl start apparmor
+   85  sudo systemctl status apparmor
+   86  sudo systemctl status apparmor.service
+   87  service apparmor status
+   88  sudo service apparmor stop
+   89  sudo service apparmor status
+   90  sudo service apparmor restart
+   91  sudo service apparmor status
+   92  systemctl list-units  --type=service
+   93  clear
+   94  man halt
+   95  man powerof
+   96  man poweroff
+   97  man reboot
+   98  man shutdown
+   99  echo sudo shutdown -h now
+  100  echo sudo shutdown -r now
+  101  clear
+  102  top
+  103  emacs &
+  104  top
+  105  priority = nice + 20
+  106  man nice
+  107  emacs programa.sh
+  108  chmod 775 programa.sh 
+  109  ./programa.sh 
+  110  nano programa.sh 
+  111  cat programa.sh 
+  112  ./programa.sh 
+  113  man taskset
+  114  taskset --cpu-list 1 ./programa.sh &
+  115  top
+  116  taskset --cpu-list 1 ./programa.sh &
+  117  ps
+  118  top
+  119  taskset --cpu-list 1 ./programa.sh &
+  120  ps
+  121  top
+  122  man nice
+  123  ps
+  124  kill 13896
+  125  ps
+  126  taskset --cpu-list 1 nice -n 10 ./programa.sh &
+  127  ps
+  128  top
+  129  man renice
+  130  ps
+  131  renice -10 -p 13936
+  132  renice 15 -p 13936
+  133  top
+  134  sudo renice -15 -p 13936
+  135  top
+  136  history > Seccion_9.txt

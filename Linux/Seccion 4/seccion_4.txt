@@ -1,0 +1,55 @@
+    1  asdfghj
+    2  clear
+    3  history
+    4  ls
+    5  type type
+    6  type cp
+    7  type ls
+    8  type
+    9  type ls
+   10  ls -l
+   11  ls -la
+   12  ls -la Escritorio/
+   13  type help
+   14  help type
+   15  help help
+   16  help ls
+   17  ls --help
+   18  ls -h
+   19  ls --h
+   20  type man
+   21  man ls
+   22  whatis ls
+   23  whatis cd
+   24  whatis type
+   25  type info
+   26  info ls
+   27  apropos directory
+   28  apropos "list directory"
+   29  ls -lah Escritorio/
+   30  ls -lah Escritorio/
+   31  clear && ls -lah
+   32  clear && ls
+   33  cleasadasd && ls
+   34  cleasadasd || ls
+   35  ls || ls -lah
+   36  clear
+   37  ls -lah Escritorio/
+   38  clear
+   39  ls -lah Escritorio/
+   40  clear
+   41  Escritorio/
+   42  ls -lah Escritorio/
+   43  exit
+   44  type ls
+   45  type cd
+   46  type clist
+   47  alias clist='clear ; ls'
+   48  type clist
+   49  clist
+   50  alias
+   51  unalias clist
+   52  clist
+   53  type clist
+   54  type info
+   55  history > seccion_4.txt

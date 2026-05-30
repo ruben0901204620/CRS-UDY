@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.perfil-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    width: 90%;
+}
+
+.perfil-header h1 {
+    font-size: 24px;
+    color: #2d89ef; /* Color principal */
+    margin-bottom: 20px;
+}
+
+.perfil-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.perfil-info strong {
+    color: #2d89ef; /* Color principal */
+}
+
+.logout-btn {
+    background-color: #2d89ef; /* Botón principal */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #1c5fb5; /* Oscurecer el color al pasar el mouse */
+}

@@ -1,0 +1,7 @@
+//Agrega una columna a una tabla.
+ALTER TABLE Prueba2 ADD COLUMN telefono INT;
+
+****************************************************************************************************
+// Ingresar nuevos datos.
+INSERT INTO tabla_P (Nombre,Telefono) VALUES ('Brandon', 45169783);
+SELECT * FROM tabla_P;

@@ -1,0 +1,26 @@
+encontrar ubicacion en JDK
+readlink -f $(which java) | sed "s:/bin/java::"                                                                    17:22:14
+/usr/lib/jvm/java-21-openjdk
+
+Configurar JAVA_HOME en Fish
+-----------------------------
+
+nano ~/.config/fish/config.fish
+# Configurar JAVA_HOME en Fish
+set -Ux JAVA_HOME /usr/lib/jvm/java-21-openjdk
+source ~/.config/fish/config.fish
+echo $JAVA_HOME
+/usr/lib/jvm/java-21-openjdk
+
+========================================================
+
+Configurar JAVA_HOME en Bash
+-----------------------------
+
+nano ~/.bashrc
+# Configurar JAVA_HOME en Bash
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+source ~/.bashrc
+echo $JAVA_HOME
+/usr/lib/jvm/java-21-openjdk
